@@ -16,7 +16,7 @@
     font-family: var(--primary-font);
 }
 
-header {
+header, h2 {
     background-color: var(--white);
     padding: 20px;
     border-radius: 10px;
@@ -51,8 +51,9 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 5%;
+    max-width: 100%;
 }
-section {
+.card {
     background-color: var(--smoke);
     border-radius: 10px;
     padding: 10px;
