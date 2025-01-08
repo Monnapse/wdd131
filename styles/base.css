@@ -17,9 +17,11 @@
 }
 
 header, h2 {
+    font-family: var(--secondary-font);
     background-color: var(--white);
     padding: 20px;
     border-radius: 10px;
+    font-weight: 900;
 }
 
 /* Navigation */
