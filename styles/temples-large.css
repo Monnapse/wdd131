@@ -33,6 +33,7 @@ a {
 a:hover {
     color: var(--gold);
 }
+/**/
 
 header {
     background-color: var(--primary-color);
