@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #dd4020;
+    --secondary-color: #e9d819;
+
+    --header-color: #f1f1f1;
+    --text-color: #161616;
+
+    --img-overlay: rgba(129, 126, 115, 0.819);
+}
+
+* {
+    margin: 0 auto;
+    font-family: 'Poppins';
+
+
+    color: var(--text-color);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--img-overlay);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    border-bottom: var(--secondary-color) 20px solid;
+}
+header h1 {
+    padding: 30px;
+    font-size: 3.5em;
+    color: var(--header-color);
+}
+
+.hero-img-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.picture-cards {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+}
+
+.picture-card {
+    position: absolute;
+    color: white;
+    padding: 10px;
+    background-color: var(--img-overlay);
+
+    padding: 20px;
+    overflow-x: visible !important;
+
+    color: var(--header-color);
+
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.picture-card td {
+    padding: 5px;
+    vertical-align: top;
+    color: var(--header-color);
+}
+
+.picture-card td:first-child {
+    text-align: right;
+    width: 50%;
+    font-weight: 500;
+}
+
+.picture-card td span {
+    text-align: left;
+    display: block;
+}
+
+.top-left {
+    top: 30px;
+    left: 30px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 30px;
+}
+
+.card-header {
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-left: -30px;
+}
+
+.card-header h2 {
+    color: var(--text-color);
+    padding: 15px;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+footer div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+footer span {
+    color: var(--header-color);
+}
+
+@media (max-width: 800px) {
+    .picture-card {
+        position: relative;
+        width: 100%;
+    }
+    .top-left {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .bottom-right {
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+    }
+    .picture-cards {
+        position: relative;
+    }
+    .hero-img-container {
+        height: 100%;
+    }
+}

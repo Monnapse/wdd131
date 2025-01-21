@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Spain</h1>
+    </header>
+    <main>
+        <div class="hero-img-container">
+            <picture>
+                <source srcset="images/Spain.webp" media="(min-width: 800px)">
+                <img src="images/spain-small.webp" alt="Responsive Image">
+            </picture>
+            <div class="picture-cards">
+                <div class="picture-card top-left">
+                    <div class="card-header">
+                        <h2>Data</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Area:</td>
+                            <td>583,533 sq km</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>23,435,698</td>
+                        </tr>
+                        <tr>
+                            <td>Capital:</td>
+                            <td>Madrid</td>
+                        </tr>
+                        <tr>
+                            <td>Languages:</td>
+                            <td>Spannish</td>
+                        </tr>
+                        <tr>
+                            <td>Currency:</td>
+                            <td>Euro</td>
+                        </tr>
+                        <tr>
+                            <td>Time Zone:</td>
+                            <td>UTC+</td>
+                        </tr>
+                        <tr>
+                            <td>Calling Code:</td>
+                            <td>+000</td>
+                        </tr>
+                        <tr>
+                            <td>Internet TLD:</td>
+                            <td>583,533 sq km</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div class="picture-card bottom-right">
+                    <div class="card-header">
+                        <h2>Weather</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td id="temperature">10 C</td>
+                        </tr>
+                        <tr>
+                            <td>Conditions:</td>
+                            <td id="conditions">Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td>Wind:</td>
+                            <td id="wind">5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td id="windChill">9.8 C</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <div>
+            <span>© <span id="year"></span> 💥 Mason Huber 💥 Utah</span>
+            <span>Last Modified: <span id="lastModified"></span></span>
+        </div>
+    </footer>
+</body>
+</html>
