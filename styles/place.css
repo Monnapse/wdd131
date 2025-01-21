@@ -135,6 +135,18 @@ footer span {
     color: var(--header-color);
 }
 
+header h1::after {
+    content: " - Welcome to Spain!";
+    font-size: 0.5em;
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.card-header::after {
+    content: "";
+    width: 100%;
+}
+
 @media (max-width: 800px) {
     .picture-card {
         position: relative;
