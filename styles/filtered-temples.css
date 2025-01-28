@@ -1,0 +1,79 @@
+.nav-toggle {
+    display: flex !important;
+}
+
+#closeMenuBtn {
+    display: none;
+}
+
+#openMenuBtn {
+    background-color: transparent;
+    display: none;
+
+    padding-right: 20px;
+}
+
+#openMenuBtn:hover {
+    cursor: pointer;
+}
+
+#openMenuBtn img {
+    width: 40px;
+    height: auto;
+}
+
+.temples-container figcaption {
+    color: var(--secondary-color);
+}
+
+.mobile-nav-header {
+    height: fit-content;
+}
+
+.mobile-nav-header .title {
+    display: none;
+}
+.mobile-nav-header > *:not(#nav) {
+    display: none;
+}
+
+.mobile-nav {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: var(--primary-color);
+
+    font-size: 1.7em;
+    z-index: 2;
+}
+
+.mobile-nav img {
+    width: 30px;
+}
+
+.mobile-nav button {
+    position: absolute;
+    width: fit-content;
+    background-color: transparent;
+    right: 0;
+    padding: 30px;
+    display: block !important;
+}
+
+.mobile-nav button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none !important;
+    }
+    header {
+        position: relative;
+    }
+    #openMenuBtn {
+        display: block;
+    }
+}

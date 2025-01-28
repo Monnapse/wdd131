@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="A temple album">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1 class="title">Temple Album</h1>
+        <nav id="nav">
+            <button id="closeMenuBtn"><img src="images/close.png" alt="close menu"></button>
+            <a href="#" onclick="homeFilter()">Home</a>
+            <a href="#" onclick="oldFilter()">Old</a>
+            <a href="#" onclick="newFilter()">New</a>
+            <a href="#" onclick="largeFilter()">Large</a>
+            <a href="#" onclick="smallFilter()">Small</a>
+        </nav>
+        <button id="openMenuBtn"><img src="images/hamburger.png" alt="open menu"></button>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="temples" class="temples-container">
+            <div>
+               <div class="temple">
+                    <h2>Washington D.C. Temple</h2>
+                    <div>
+                        <p>Location: <span>Washington D.C</span></p>
+                        <p>Dedicated: <span>2005, aufg  3</span></p>
+                        <p>Size: <span>43785435 sq ft</span></p>
+                    </div>
+                    <img src="images/washington_dc_temple.webp" alt="Washington D.C. Temple" loading="lazy">
+               </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>© <span id="currentYear"></span> Mason Huber | Utah</span>
+        <br>
+        <span id="lastModified">Last modified: </span>
+    </footer>
+</body>
+</html>
