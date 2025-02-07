@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Mason Huber</title>
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals, Mason Huber">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+    <main>
+        <form id="form" method="get" action="review.html">
+            <label>
+                Product Name
+                <br>
+                <select id="product" class="input-select" name="product" required>
+                </select>
+            </label>
+
+            <br>
+
+            <h3>Overall Rating</h3>
+            <br>
+            <div>
+                <label>
+                    <input id="onestar" type="radio" name="rating" value="one" checked> 
+                    ⭐
+                <label>
+                    <input id="twostar" type="radio" name="rating" value="two">
+                    ⭐⭐
+                </label>
+                <label>
+                    <input id="threestar" type="radio" name="rating" value="three">
+                    ⭐⭐⭐
+                </label>
+                <label>
+                    <input id="fourstar" type="radio" name="rating" value="four">
+                    ⭐⭐⭐⭐
+                </label>
+                <label>
+                    <input id="fivestar" type="radio" name="rating" value="five">
+                    ⭐⭐⭐⭐⭐
+                </label>
+            </div>
+           
+            <br>
+
+            <label for="birthday">Date of Installation</label>
+            <br>
+            <input id="date" class="input-date" type="date" name="date">
+
+            <br>
+            <div>
+                <h3>Which features did you find useful in the product?</h3>
+                <h3>(Check all that apply)</h3>
+            </div>
+            <input id="durability" type="checkbox" name="durability">
+            <label for="durability">Durability</label><br>
+
+            <input id="easeofuse" type="checkbox" name="easeofuse">
+            <label for="easeofuse">Ease of Use</label><br>
+
+            <input id="performance" type="checkbox" name="performance">
+            <label for="performance">Performance</label><br>
+
+            <input id="design" type="checkbox" name="design">
+            <label for="design">Design</label><br>
+
+            <br>
+
+            <label>
+                Written Review (Optional)
+                <br>
+                <textarea id="review" class="input-text" name="review"></textarea>
+            </label><br>
+
+
+            <label>
+                Your Name (Optional)
+                <br>
+                <input id="name" class="input-text" type="text" name="name" autocomplete="name">
+            </label>
+
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <span>© <span id="currentYear"></span> Mason Huber | Utah</span>
+        <br>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
